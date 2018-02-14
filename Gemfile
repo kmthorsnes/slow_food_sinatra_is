@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.4.1'
 
 # PostgreSQL driver
-gem 'postgres', '~> 0.8.1'
+gem 'pg'
 
 # Sinatra driver
 gem 'sinatra'
@@ -30,6 +30,7 @@ end
 
 group :test, :development do
   gem 'factory_bot'
+  gem 'cucumber', '~> 2.4'
   gem 'pry-byebug'
   gem 'timecop'
 end
