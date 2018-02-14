@@ -1,12 +1,14 @@
-Given(/^"([^"]*)" is in "([^"]*)"$/) do |arg1, arg2|
-  pending # Write code here that turns the phrase above into concrete actions
+Given(/^"([^"]*)" is in "([^"]*)"$/) do |product_name, menu_name|
+  menu = Menu.create(name: menu_name)
+  Product.create(name: product_name, menu: menu)
 end
 
 When(/^The user visits the site$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  # pending # Write code here that turns the phrase above into concrete actions
+  visit '/'
 end
 
-Then(/^Customer should see a "([^"]*)"$/) do |arg1|
+Then(/^Customer should see a "([^"]*)"$/) do |product_name|
   pending # Write code here that turns the phrase above into concrete actions
 end
 
