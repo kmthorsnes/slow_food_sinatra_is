@@ -1,6 +1,3 @@
-# As a costumer
-# in order to choose my meal
-# I want to be able to see a selection of different dishes.
 require  './app/models/menu.rb'
 
 describe Menu do
