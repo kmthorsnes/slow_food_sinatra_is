@@ -9,6 +9,7 @@ Feature: Customer can see a menu
 
   Scenario: User visits a site and is able to see a menu on the landing page
     When The user visits the site
+    Then Show me the page
     Then Customer should see a "Our Bites"
     And Customer should see "Pinnekjøtt"
     And Customer should see "Pizza"

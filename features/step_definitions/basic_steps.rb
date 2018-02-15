@@ -4,14 +4,14 @@ Given(/^"([^"]*)" is in "([^"]*)"$/) do |product_name, menu_name|
 end
 
 When(/^The user visits the site$/) do
-  # pending # Write code here that turns the phrase above into concrete actions
   visit '/'
 end
 
-Then(/^Customer should see a "([^"]*)"$/) do |product_name|
-  pending # Write code here that turns the phrase above into concrete actions
+Then(/^Customer should see a "([^"]*)"$/) do |text|
+  expect(page).to have_content text
 end
 
-Then(/^Customer should see "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+Then(/^Show me the page$/) do
+  save_and_open_page
+
 end
