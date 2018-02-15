@@ -1,4 +1,4 @@
-Feature: User can see a menu
+Feature: User can view a menu
   As a customer
   in order to choose my meal
   I want to be able to see a selection of different dishes
