@@ -1,5 +1,5 @@
 Given(/^"([^"]*)" is in "([^"]*)"$/) do |product_name, menu_name|
-  menu = Menu.create(name: menu_name)
+  menu = Menu.find_or_create_by(name: menu_name)
   Product.create(name: product_name, menu: menu)
 end
 
