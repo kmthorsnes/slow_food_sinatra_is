@@ -13,4 +13,4 @@ end
 
 Then(/^Customer should see "([^"]*)"$/) do |text|
   expect(page).to have_content text
-en
+end
