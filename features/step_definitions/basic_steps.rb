@@ -12,10 +12,5 @@ Then(/^Customer should see a "([^"]*)"$/) do |text|
 end
 
 Then(/^Customer should see "([^"]*)"$/) do |text|
-expect(page).to have_content text
-end
-
-Then(/^Show me the page$/) do
-  save_and_open_page
-
+  expect(page).to have_content text
 end
